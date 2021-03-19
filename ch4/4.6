@@ -1,0 +1,16 @@
+#用半小時的超時時間來重寫您的工資計算，並創建一個帶有computepay兩個參數（hours和rate）的函數。
+input_hour=input('enter hours:')
+input_rate=input('enter rates:')
+hour=float(input_hour)
+rate=float(input_rate
+           )
+def computepay(hour,rate):
+  if hour>40:
+    x=(hour-40)*0.5*rate+hour*rate
+    print(x)
+  else:
+    y=hour*rate
+    print(y)
+
+a=computepay(hour,rate)
+print(a)
